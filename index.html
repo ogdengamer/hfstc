@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Have fun storming the castle! • stormingthecastle.com</title>
+  <meta name="description" content="stormingthecastle.com — Have fun storming the castle!" />
+  <meta property="og:title" content="Have fun storming the castle!" />
+  <meta property="og:description" content="stormingthecastle.com — Have fun storming the castle!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://stormingthecastle.com" />
+  <meta property="og:image" content="/assets/miracle-max.jpg" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Cpath fill='%23ffffff' d='M16 112h96v8H16z'/%3E%3Cpath fill='%23ffffff' d='M24 104h80V56l-16 8-8-16-16 16-8-24-16 24-16-8z'/%3E%3C/svg%3E" />
+  <style>
+    :root {
+      --bg: #0b1220;
+      --card: #0f172a;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --accent: #f8fafc;
+      --ring: rgba(148,163,184,0.25);
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--text);
+      background: radial-gradient(1200px 800px at 80% -10%, #1e293b 0%, var(--bg) 40%), var(--bg);
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+    .card {
+      max-width: 960px;
+      width: 100%;
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+      border: 1px solid rgba(148,163,184,0.15);
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+      overflow: hidden;
+      backdrop-filter: blur(8px);
+    }
+    .media {
+      aspect-ratio: 16 / 9;
+      width: 100%;
+      background: #111827;
+      position: relative;
+      display: grid;
+      place-items: center;
+      border-bottom: 1px solid rgba(148,163,184,0.15);
+    }
+    .media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      filter: saturate(1.05) contrast(1.05);
+    }
+    .media .placeholder {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      color: var(--muted);
+      padding: 24px;
+      text-align: center;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .content {
+      padding: clamp(20px, 4vw, 36px);
+      display: grid;
+      gap: 16px;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(28px, 6vw, 56px);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      color: var(--accent);
+      text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+    }
+    p.tagline {
+      margin: 0;
+      font-size: clamp(16px, 2.2vw, 20px);
+      color: var(--muted);
+    }
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 8px;
+      padding: 12px 16px;
+      border: 1px solid rgba(148,163,184,0.25);
+      border-radius: 12px;
+      text-decoration: none;
+      color: var(--text);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    }
+    .cta:hover {
+      transform: translateY(-1px);
+      border-color: rgba(148,163,184,0.45);
+      box-shadow: 0 18px 40px rgba(0,0,0,0.3);
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px clamp(20px, 4vw, 36px);
+      border-top: 1px solid rgba(148,163,184,0.15);
+      font-size: 14px;
+      color: var(--muted);
+    }
+    .brand { letter-spacing: 0.02em; }
+    .castle { opacity: 0.85; }
+    @media (max-width: 480px) {
+      .footer { flex-direction: column; gap: 8px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="card" role="main" aria-label="Parking page">
+    <figure class="media">
+      <!--
+        ▶ Replace /assets/miracle-max.jpg with a photo/illustration you have rights to use.
+        Place your file at /assets/miracle-max.jpg (create the folder). Recommended size: 1920×1080.
+        Alt text below should accurately describe the image used.
+      -->
+      <img src="/assets/miracle-max.jpg" alt="Two characters cheerfully saying the line: Have fun storming the castle!" />
+      <figcaption class="visually-hidden">Parking page hero image</figcaption>
+      <div class="placeholder" aria-hidden="true">
+        <div>
+          <strong>No image found at /assets/miracle-max.jpg</strong><br />
+          Add your licensed image there to replace this placeholder.
+        </div>
+      </div>
+    </figure>
+
+    <section class="content">
+      <h1>“Have fun storming the castle!”</h1>
+      <p class="tagline">stormingthecastle.com</p>
+      <!-- Optional CTA: point this to your company, social, or newsletter -->
+      <!-- <a class="cta" href="#" aria-label="Learn more">Notify me when this launches →</a> -->
+    </section>
+
+    <footer class="footer">
+      <span class="brand">© <span id="year"></span> stormingthecastle.com</span>
+      <span class="castle" aria-hidden="true">🏰</span>
+    </footer>
+  </main>
+
+  <script>
+    // Update year
+    const y = document.getElementById('year');
+    if (y) y.textContent = new Date().getFullYear();
+
+    // Hide placeholder if image loads
+    const img = document.querySelector('.media img');
+    const ph = document.querySelector('.media .placeholder');
+    if (img && ph) {
+      if (img.complete && img.naturalWidth > 0) ph.style.display = 'none';
+      img.addEventListener('load', () => ph.style.display = 'none');
+      img.addEventListener('error', () => ph.style.display = 'grid');
+    }
+  </script>
+</body>
+</html>
