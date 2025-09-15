@@ -51,14 +51,14 @@
       display: grid;
       place-items: center;
       border-bottom: 1px solid rgba(148,163,184,0.15);
+      padding: 4px; /* 👈 new */
+      box-sizing: border-box; /* make padding part of the box */
     }
     .media img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: center;
-      display: block;
-      filter: saturate(1.05) contrast(1.05);
+      border-radius: 12px; /* optional: soften inside image */
     }
     .media .placeholder {
       position: absolute;
