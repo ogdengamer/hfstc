@@ -43,21 +43,15 @@
       backdrop-filter: blur(8px);
     }
     .media {
-      aspect-ratio: 16 / 9;
       width: 100%;
       background: #111827;
-      position: relative;
-      display: grid;
-      place-items: center;
       border-bottom: 1px solid rgba(148,163,184,0.15);
     }
     .media img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
       display: block;
-      filter: saturate(1.05) contrast(1.05);
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto; /* centers it */
     }
     .media .placeholder {
       position: absolute;
