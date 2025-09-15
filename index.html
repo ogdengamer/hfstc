@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -36,6 +35,7 @@
     .card {
       max-width: 960px;
       width: 100%;
+      margin: 0 auto;
       background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
       border: 1px solid rgba(148,163,184,0.15);
       border-radius: 20px;
@@ -45,20 +45,22 @@
     }
     .media {
       aspect-ratio: 16 / 9;
-      width: 100%;
+      width: 90.625%;
+      margin: 0 auto;
+      padding-top: clamp(8px, 2vw, 16px);
       background: #111827;
       position: relative;
       display: grid;
       place-items: center;
       border-bottom: 1px solid rgba(148,163,184,0.15);
-      padding: 4px; /* 👈 new */
-      box-sizing: border-box; /* make padding part of the box */
     }
     .media img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      border-radius: 12px; /* optional: soften inside image */
+      object-position: center;
+      display: block;
+      filter: saturate(1.05) contrast(1.05);
     }
     .media .placeholder {
       position: absolute;
@@ -126,11 +128,6 @@
 <body>
   <main class="card" role="main" aria-label="Parking page">
     <figure class="media">
-      <!--
-        ▶ Replace /assets/miracle-max.jpg with a photo/illustration you have rights to use.
-        Place your file at /assets/miracle-max.jpg (create the folder). Recommended size: 1920×1080.
-        Alt text below should accurately describe the image used.
-      -->
       <img src="/assets/miracle-max.jpg" alt="Two characters cheerfully saying the line: Have fun storming the castle!" />
       <div class="placeholder" aria-hidden="true">
         <div>
